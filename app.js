@@ -2,7 +2,6 @@ let app = require('express')();
 let WebSocket = require('ws');
 let wss = new WebSocket.Server({ port: 8080 });
 const port = 3000
-
 wss.on('connection', function connection(ws) {
     console.log(`已经连接客户端!`);
 
